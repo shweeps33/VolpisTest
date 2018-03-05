@@ -24,19 +24,21 @@ class ViewController: UIViewController {
         tableView.dataSource = self
         tableView.register(UINib(nibName: nib, bundle: nil), forCellReuseIdentifier: cellId)
         
-        RequestManager.getData { response in
-            self.placesArray.append(contentsOf: response)
-            self.tableView.reloadData()
+        DispatchQueue.main.async {
+            RequestManager.getData { response in
+                self.placesArray.append(contentsOf: response)
+                self.tableView.reloadData()
+            }
         }
+        
         
     }
     
     @IBAction func showPlaces(_ sender: UIButton) {
         var placesToShow = [Place]()
-        for i in 0..<tableView.numberOfRows(inSection: 0) {
-            let cell = tableView.cellForRow(at: IndexPath(row: i, section: 0)) as! TableViewCell
-            if cell.checkMark.state == .selected {
-                placesToShow.append(placesArray[i])
+        for place in placesArray {
+            if place.isChosen {
+                placesToShow.append(place)
             }
         }
         guard let mapsVC = storyboard?.instantiateViewController(withIdentifier: String(describing: MapsViewController.self)) as? MapsViewController else {
@@ -56,10 +58,16 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as? TableViewCell else {
             return UITableViewCell()
         }
-        
+        cell.tag = indexPath.row
+        cell.delegate = self
         cell.fill(withData: placesArray[indexPath.row])
-        cell.prepareForReuse()
+        
         return cell
     }
 }
 
+extension ViewController: PlaceSelectionDelegate {
+    func changeStateForPlace(atIndex: Int) {
+        placesArray[atIndex].isChosen = !placesArray[atIndex].isChosen
+    }
+}

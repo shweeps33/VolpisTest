@@ -14,16 +14,16 @@ class TableViewCell: UITableViewCell {
     @IBOutlet weak var objectDescr: UILabel!
     @IBOutlet weak var checkMark: UIButton!
     
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
+    var cellPlace = Place()
+    var delegate: PlaceSelectionDelegate?
 
     func fill(withData: Place) {
-        objectName.text = withData.name
-        objectDescr.text = withData.descr
+       
         DispatchQueue.main.async {
+            self.cellPlace = withData
+            self.objectName.text = withData.name
+            self.objectDescr.text = withData.descr
+            self.checkMark.isSelected = withData.isChosen
             if let data = withData.imageData {
                 self.objectImage.image = UIImage(data: data)
             }
@@ -34,6 +34,14 @@ class TableViewCell: UITableViewCell {
     
     @IBAction func checkMark(_ sender: UIButton) {
         sender.isSelected = !sender.isSelected
+        delegate?.changeStateForPlace(atIndex: self.tag)
+    }
+    
+    override func prepareForReuse() {
+        self.objectName.text = ""
+        self.objectDescr.text = ""
+        self.checkMark.isSelected = false
     }
     
 }
+

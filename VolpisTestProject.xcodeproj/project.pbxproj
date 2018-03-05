@@ -16,6 +16,7 @@
 		840FC0CE204B4AEA00C4EE30 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 840FC0CC204B4AEA00C4EE30 /* TableViewCell.xib */; };
 		840FC0D0204B515500C4EE30 /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840FC0CF204B515500C4EE30 /* RequestManager.swift */; };
 		840FC0D2204B525A00C4EE30 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840FC0D1204B525A00C4EE30 /* Place.swift */; };
+		8438F87F204DE426008894A3 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8438F87E204DE426008894A3 /* Protocols.swift */; };
 		846066D4204C9F4900E71EA4 /* MapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846066D3204C9F4900E71EA4 /* MapsViewController.swift */; };
 		FE1A7AAF0B8A69B8AF0F34DE /* Pods_VolpisTestProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E4BAC6E7355FA0201287029 /* Pods_VolpisTestProject.framework */; };
 /* End PBXBuildFile section */
@@ -34,6 +35,7 @@
 		840FC0CC204B4AEA00C4EE30 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		840FC0CF204B515500C4EE30 /* RequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
 		840FC0D1204B525A00C4EE30 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		8438F87E204DE426008894A3 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		846066D3204C9F4900E71EA4 /* MapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsViewController.swift; sourceTree = "<group>"; };
 		EE715DADCFAF822D2BDBA3C4 /* Pods-VolpisTestProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VolpisTestProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-VolpisTestProject/Pods-VolpisTestProject.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -87,6 +89,7 @@
 				840FC0CF204B515500C4EE30 /* RequestManager.swift */,
 				840FC0BD204B448C00C4EE30 /* Main.storyboard */,
 				840FC0CB204B4AEA00C4EE30 /* TableViewCell.swift */,
+				8438F87E204DE426008894A3 /* Protocols.swift */,
 				840FC0CC204B4AEA00C4EE30 /* TableViewCell.xib */,
 				840FC0C0204B448C00C4EE30 /* Assets.xcassets */,
 				840FC0C2204B448C00C4EE30 /* LaunchScreen.storyboard */,
@@ -241,6 +244,7 @@
 			files = (
 				840FC0CD204B4AEA00C4EE30 /* TableViewCell.swift in Sources */,
 				840FC0BC204B448C00C4EE30 /* ViewController.swift in Sources */,
+				8438F87F204DE426008894A3 /* Protocols.swift in Sources */,
 				840FC0BA204B448C00C4EE30 /* AppDelegate.swift in Sources */,
 				846066D4204C9F4900E71EA4 /* MapsViewController.swift in Sources */,
 				840FC0D0204B515500C4EE30 /* RequestManager.swift in Sources */,
