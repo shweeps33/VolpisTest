@@ -82,20 +82,44 @@
 		840FC0B8204B448C00C4EE30 /* VolpisTestProject */ = {
 			isa = PBXGroup;
 			children = (
+				8438F880204E8FC4008894A3 /* Model */,
+				8438F881204E8FE0008894A3 /* View */,
+				8438F882204E8FF8008894A3 /* Controller */,
+				840FC0C5204B448C00C4EE30 /* Info.plist */,
 				840FC0B9204B448C00C4EE30 /* AppDelegate.swift */,
-				840FC0BB204B448C00C4EE30 /* ViewController.swift */,
-				846066D3204C9F4900E71EA4 /* MapsViewController.swift */,
-				840FC0D1204B525A00C4EE30 /* Place.swift */,
+			);
+			path = VolpisTestProject;
+			sourceTree = "<group>";
+		};
+		8438F880204E8FC4008894A3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
 				840FC0CF204B515500C4EE30 /* RequestManager.swift */,
-				840FC0BD204B448C00C4EE30 /* Main.storyboard */,
-				840FC0CB204B4AEA00C4EE30 /* TableViewCell.swift */,
+				840FC0D1204B525A00C4EE30 /* Place.swift */,
 				8438F87E204DE426008894A3 /* Protocols.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8438F881204E8FE0008894A3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				840FC0BD204B448C00C4EE30 /* Main.storyboard */,
 				840FC0CC204B4AEA00C4EE30 /* TableViewCell.xib */,
 				840FC0C0204B448C00C4EE30 /* Assets.xcassets */,
 				840FC0C2204B448C00C4EE30 /* LaunchScreen.storyboard */,
-				840FC0C5204B448C00C4EE30 /* Info.plist */,
 			);
-			path = VolpisTestProject;
+			path = View;
+			sourceTree = "<group>";
+		};
+		8438F882204E8FF8008894A3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				840FC0BB204B448C00C4EE30 /* ViewController.swift */,
+				846066D3204C9F4900E71EA4 /* MapsViewController.swift */,
+				840FC0CB204B4AEA00C4EE30 /* TableViewCell.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		E1DB0B3A732F18E9343445B0 /* Frameworks */ = {

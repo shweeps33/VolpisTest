@@ -13,6 +13,7 @@ struct Place {
     var name: String?
     var imageUrl: String? {
         didSet {
+            //Зображення завантажуються дуже повільно, через це програма так довго грузиться
             let url = URL(string: imageUrl ?? "")
             if let data = try? Data(contentsOf: url!) {
                 imageData = data
@@ -36,7 +37,7 @@ struct Place {
     mutating func saveData(_ data: JSON) {
         self.name = data["Title"].string ?? ""
         self.descr = data["Description"].string ?? ""
-        //self.imageUrl = data["ImageUrl"].string ?? ""
+        self.imageUrl = data["ImageUrl"].string ?? ""
         let lat = data["Latitude"].double ?? 0.0
         let long = data["longitude"].double ?? 0.0
         self.coordinates = (lat, long)

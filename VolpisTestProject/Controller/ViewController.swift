@@ -11,7 +11,7 @@ import Alamofire
 import SwiftyJSON
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet weak var tableView: UITableView!
     
     var placesArray = [Place]()
@@ -30,8 +30,6 @@ class ViewController: UIViewController {
                 self.tableView.reloadData()
             }
         }
-        
-        
     }
     
     @IBAction func showPlaces(_ sender: UIButton) {
