@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_VolpisTestProjectVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_VolpisTestProjectVersionString[];
+FOUNDATION_EXPORT double Pods_ZomatoAppVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_ZomatoAppVersionString[];
 

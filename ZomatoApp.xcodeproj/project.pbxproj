@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D91AB25EE493D8F04074F8C /* Pods_ZomatoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCA84756D91AD057B4ED37A5 /* Pods_ZomatoApp.framework */; };
 		7014ECC520E146AD00A53745 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7014ECC420E146AD00A53745 /* ImageDownloader.swift */; };
 		7019519320E379090024F976 /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7019519220E379090024F976 /* JSONParser.swift */; };
 		7019519520E38FBA0024F976 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7019519420E38FBA0024F976 /* Restaurant.swift */; };
@@ -22,7 +23,6 @@
 		840FC0D2204B525A00C4EE30 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840FC0D1204B525A00C4EE30 /* Place.swift */; };
 		8438F87F204DE426008894A3 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8438F87E204DE426008894A3 /* Protocols.swift */; };
 		846066D4204C9F4900E71EA4 /* MapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846066D3204C9F4900E71EA4 /* MapsViewController.swift */; };
-		FE1A7AAF0B8A69B8AF0F34DE /* Pods_VolpisTestProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E4BAC6E7355FA0201287029 /* Pods_VolpisTestProject.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,7 +32,7 @@
 		7019519220E379090024F976 /* JSONParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParser.swift; sourceTree = "<group>"; };
 		7019519420E38FBA0024F976 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		7056C86820E295B500115691 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
-		840FC0B6204B448C00C4EE30 /* VolpisTestProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VolpisTestProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		840FC0B6204B448C00C4EE30 /* ZomatoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZomatoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		840FC0B9204B448C00C4EE30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		840FC0BB204B448C00C4EE30 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		840FC0BE204B448C00C4EE30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -45,7 +45,10 @@
 		840FC0D1204B525A00C4EE30 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		8438F87E204DE426008894A3 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		846066D3204C9F4900E71EA4 /* MapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsViewController.swift; sourceTree = "<group>"; };
+		968532B7F304DE884853639B /* Pods-ZomatoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZomatoApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZomatoApp/Pods-ZomatoApp.debug.xcconfig"; sourceTree = "<group>"; };
+		DCA84756D91AD057B4ED37A5 /* Pods_ZomatoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZomatoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE715DADCFAF822D2BDBA3C4 /* Pods-VolpisTestProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VolpisTestProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-VolpisTestProject/Pods-VolpisTestProject.release.xcconfig"; sourceTree = "<group>"; };
+		FE52AD37027D8C1932969534 /* Pods-ZomatoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZomatoApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZomatoApp/Pods-ZomatoApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE1A7AAF0B8A69B8AF0F34DE /* Pods_VolpisTestProject.framework in Frameworks */,
+				4D91AB25EE493D8F04074F8C /* Pods_ZomatoApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +68,8 @@
 			children = (
 				1D24DAA4BDEADE86259CCD78 /* Pods-VolpisTestProject.debug.xcconfig */,
 				EE715DADCFAF822D2BDBA3C4 /* Pods-VolpisTestProject.release.xcconfig */,
+				968532B7F304DE884853639B /* Pods-ZomatoApp.debug.xcconfig */,
+				FE52AD37027D8C1932969534 /* Pods-ZomatoApp.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -72,7 +77,7 @@
 		840FC0AD204B448C00C4EE30 = {
 			isa = PBXGroup;
 			children = (
-				840FC0B8204B448C00C4EE30 /* VolpisTestProject */,
+				840FC0B8204B448C00C4EE30 /* ZomatoApp */,
 				840FC0B7204B448C00C4EE30 /* Products */,
 				618FDC54F9F04C53CDF9B0FA /* Pods */,
 				E1DB0B3A732F18E9343445B0 /* Frameworks */,
@@ -82,12 +87,12 @@
 		840FC0B7204B448C00C4EE30 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				840FC0B6204B448C00C4EE30 /* VolpisTestProject.app */,
+				840FC0B6204B448C00C4EE30 /* ZomatoApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		840FC0B8204B448C00C4EE30 /* VolpisTestProject */ = {
+		840FC0B8204B448C00C4EE30 /* ZomatoApp */ = {
 			isa = PBXGroup;
 			children = (
 				8438F880204E8FC4008894A3 /* Model */,
@@ -96,7 +101,7 @@
 				840FC0C5204B448C00C4EE30 /* Info.plist */,
 				840FC0B9204B448C00C4EE30 /* AppDelegate.swift */,
 			);
-			path = VolpisTestProject;
+			path = ZomatoApp;
 			sourceTree = "<group>";
 		};
 		8438F880204E8FC4008894A3 /* Model */ = {
@@ -138,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				5E4BAC6E7355FA0201287029 /* Pods_VolpisTestProject.framework */,
+				DCA84756D91AD057B4ED37A5 /* Pods_ZomatoApp.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -145,9 +151,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		840FC0B5204B448C00C4EE30 /* VolpisTestProject */ = {
+		840FC0B5204B448C00C4EE30 /* ZomatoApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 840FC0C8204B448C00C4EE30 /* Build configuration list for PBXNativeTarget "VolpisTestProject" */;
+			buildConfigurationList = 840FC0C8204B448C00C4EE30 /* Build configuration list for PBXNativeTarget "ZomatoApp" */;
 			buildPhases = (
 				0A92D07157E3886AE7BD6480 /* [CP] Check Pods Manifest.lock */,
 				840FC0B2204B448C00C4EE30 /* Sources */,
@@ -160,9 +166,9 @@
 			);
 			dependencies = (
 			);
-			name = VolpisTestProject;
+			name = ZomatoApp;
 			productName = VolpisTestProject;
-			productReference = 840FC0B6204B448C00C4EE30 /* VolpisTestProject.app */;
+			productReference = 840FC0B6204B448C00C4EE30 /* ZomatoApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -181,7 +187,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 840FC0B1204B448C00C4EE30 /* Build configuration list for PBXProject "VolpisTestProject" */;
+			buildConfigurationList = 840FC0B1204B448C00C4EE30 /* Build configuration list for PBXProject "ZomatoApp" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -194,7 +200,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				840FC0B5204B448C00C4EE30 /* VolpisTestProject */,
+				840FC0B5204B448C00C4EE30 /* ZomatoApp */,
 			);
 		};
 /* End PBXProject section */
@@ -225,7 +231,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-VolpisTestProject-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-ZomatoApp-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -238,7 +244,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-VolpisTestProject/Pods-VolpisTestProject-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-ZomatoApp/Pods-ZomatoApp-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
@@ -249,7 +255,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VolpisTestProject/Pods-VolpisTestProject-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZomatoApp/Pods-ZomatoApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DCAC1D9C5D65C3F4859A6C01 /* [CP] Copy Pods Resources */ = {
@@ -258,7 +264,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-VolpisTestProject/Pods-VolpisTestProject-resources.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-ZomatoApp/Pods-ZomatoApp-resources.sh",
 				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
 				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
 			);
@@ -269,7 +275,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VolpisTestProject/Pods-VolpisTestProject-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZomatoApp/Pods-ZomatoApp-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -424,14 +430,14 @@
 		};
 		840FC0C9204B448C00C4EE30 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1D24DAA4BDEADE86259CCD78 /* Pods-VolpisTestProject.debug.xcconfig */;
+			baseConfigurationReference = 968532B7F304DE884853639B /* Pods-ZomatoApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LDWUKS5K42;
-				INFOPLIST_FILE = VolpisTestProject/Info.plist;
+				INFOPLIST_FILE = ZomatoApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = TestProject1.VolpisTestProject;
+				PRODUCT_BUNDLE_IDENTIFIER = ZomatoApp.ZomatoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -440,14 +446,14 @@
 		};
 		840FC0CA204B448C00C4EE30 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EE715DADCFAF822D2BDBA3C4 /* Pods-VolpisTestProject.release.xcconfig */;
+			baseConfigurationReference = FE52AD37027D8C1932969534 /* Pods-ZomatoApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LDWUKS5K42;
-				INFOPLIST_FILE = VolpisTestProject/Info.plist;
+				INFOPLIST_FILE = ZomatoApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = TestProject1.VolpisTestProject;
+				PRODUCT_BUNDLE_IDENTIFIER = ZomatoApp.ZomatoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -457,7 +463,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		840FC0B1204B448C00C4EE30 /* Build configuration list for PBXProject "VolpisTestProject" */ = {
+		840FC0B1204B448C00C4EE30 /* Build configuration list for PBXProject "ZomatoApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				840FC0C6204B448C00C4EE30 /* Debug */,
@@ -466,7 +472,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		840FC0C8204B448C00C4EE30 /* Build configuration list for PBXNativeTarget "VolpisTestProject" */ = {
+		840FC0C8204B448C00C4EE30 /* Build configuration list for PBXNativeTarget "ZomatoApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				840FC0C9204B448C00C4EE30 /* Debug */,

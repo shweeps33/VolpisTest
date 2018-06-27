@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "60DC4C730C6E445FB44DDEA28A874D4F"
-               BuildableName = "Pods_VolpisTestProject.framework"
-               BlueprintName = "Pods-VolpisTestProject"
+               BlueprintIdentifier = "4706122FB2DDA1F17320F821E815AD89"
+               BuildableName = "Pods_ZomatoApp.framework"
+               BlueprintName = "Pods-ZomatoApp"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "60DC4C730C6E445FB44DDEA28A874D4F"
-            BuildableName = "Pods_VolpisTestProject.framework"
-            BlueprintName = "Pods-VolpisTestProject"
+            BlueprintIdentifier = "4706122FB2DDA1F17320F821E815AD89"
+            BuildableName = "Pods_ZomatoApp.framework"
+            BlueprintName = "Pods-ZomatoApp"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

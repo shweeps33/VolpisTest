@@ -2,9 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:VolpisTestProject.xcodeproj">
+      location = "group:/Users/davyd.shved/Documents/Projects/ZomatoApp/ZomatoApp.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:ZomatoApp.xcodeproj">
    </FileRef>
 </Workspace>
