@@ -24,8 +24,8 @@ class MapsViewController: UIViewController {
         for place in placesArray {
             let markerForLocation = GMSMarker()
             markerForLocation.icon = #imageLiteral(resourceName: "marker")
-            markerForLocation.title = place.name
-            markerForLocation.position = CLLocationCoordinate2D(latitude: place.coordinates.0, longitude: place.coordinates.1)
+            //markerForLocation.title = place.name
+            //markerForLocation.position = CLLocationCoordinate2D(latitude: place.latitude!, longitude: place.longitude!)
             markerForLocation.map = mapView
         }
         

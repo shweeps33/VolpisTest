@@ -11,3 +11,7 @@ import Foundation
 protocol PlaceSelectionDelegate {
     func changeStateForPlace(atIndex: Int)
 }
+
+protocol ImageDownloaderDelegate : class {
+    func finished(withImage image: Data, forCell index: IndexPath)
+}

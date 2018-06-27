@@ -13,28 +13,20 @@ class TableViewCell: UITableViewCell {
     @IBOutlet weak var objectName: UILabel!
     @IBOutlet weak var objectDescr: UILabel!
     @IBOutlet weak var checkMark: UIButton!
+    @IBOutlet weak var loadingIndicator: UIActivityIndicatorView!
     
-    var cellPlace = Place()
-    var delegate: PlaceSelectionDelegate?
-
-    func fill(withData: Place) {
-       
+    func fill(withData data: Restaurant, completion: @escaping ((String) -> Void)) {
         DispatchQueue.main.async {
-            self.cellPlace = withData
-            self.objectName.text = withData.name
-            self.objectDescr.text = withData.descr
-            self.checkMark.isSelected = withData.isChosen
-            if let data = withData.imageData {
-                self.objectImage.image = UIImage(data: data)
+            self.objectName.text = data.name
+            self.objectDescr.text = data.address
+            if let url = data.photoURL {
+                completion(url)
             }
-            
         }
-
     }
     
     @IBAction func checkMark(_ sender: UIButton) {
         sender.isSelected = !sender.isSelected
-        delegate?.changeStateForPlace(atIndex: self.tag)
     }
     
     override func prepareForReuse() {
@@ -43,5 +35,8 @@ class TableViewCell: UITableViewCell {
         self.checkMark.isSelected = false
     }
     
+    func setImage(with image: Data) {
+        loadingIndicator.stopAnimating()
+        objectImage.image = UIImage(data: image)
+    }
 }
-

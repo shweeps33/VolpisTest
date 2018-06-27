@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7014ECC520E146AD00A53745 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7014ECC420E146AD00A53745 /* ImageDownloader.swift */; };
+		7019519320E379090024F976 /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7019519220E379090024F976 /* JSONParser.swift */; };
+		7019519520E38FBA0024F976 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7019519420E38FBA0024F976 /* Restaurant.swift */; };
+		7056C86920E295B500115691 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7056C86720E295B500115691 /* Model.xcdatamodeld */; };
 		840FC0BA204B448C00C4EE30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840FC0B9204B448C00C4EE30 /* AppDelegate.swift */; };
 		840FC0BC204B448C00C4EE30 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840FC0BB204B448C00C4EE30 /* ViewController.swift */; };
 		840FC0BF204B448C00C4EE30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 840FC0BD204B448C00C4EE30 /* Main.storyboard */; };
@@ -24,6 +28,10 @@
 /* Begin PBXFileReference section */
 		1D24DAA4BDEADE86259CCD78 /* Pods-VolpisTestProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VolpisTestProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VolpisTestProject/Pods-VolpisTestProject.debug.xcconfig"; sourceTree = "<group>"; };
 		5E4BAC6E7355FA0201287029 /* Pods_VolpisTestProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VolpisTestProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7014ECC420E146AD00A53745 /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
+		7019519220E379090024F976 /* JSONParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParser.swift; sourceTree = "<group>"; };
+		7019519420E38FBA0024F976 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		7056C86820E295B500115691 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		840FC0B6204B448C00C4EE30 /* VolpisTestProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VolpisTestProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		840FC0B9204B448C00C4EE30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		840FC0BB204B448C00C4EE30 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -95,6 +103,8 @@
 			isa = PBXGroup;
 			children = (
 				840FC0CF204B515500C4EE30 /* RequestManager.swift */,
+				7019519220E379090024F976 /* JSONParser.swift */,
+				7019519420E38FBA0024F976 /* Restaurant.swift */,
 				840FC0D1204B525A00C4EE30 /* Place.swift */,
 				8438F87E204DE426008894A3 /* Protocols.swift */,
 			);
@@ -116,8 +126,10 @@
 			isa = PBXGroup;
 			children = (
 				840FC0BB204B448C00C4EE30 /* ViewController.swift */,
-				846066D3204C9F4900E71EA4 /* MapsViewController.swift */,
 				840FC0CB204B4AEA00C4EE30 /* TableViewCell.swift */,
+				7014ECC420E146AD00A53745 /* ImageDownloader.swift */,
+				7056C86720E295B500115691 /* Model.xcdatamodeld */,
+				846066D3204C9F4900E71EA4 /* MapsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -252,7 +264,8 @@
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -268,10 +281,14 @@
 			files = (
 				840FC0CD204B4AEA00C4EE30 /* TableViewCell.swift in Sources */,
 				840FC0BC204B448C00C4EE30 /* ViewController.swift in Sources */,
+				7014ECC520E146AD00A53745 /* ImageDownloader.swift in Sources */,
 				8438F87F204DE426008894A3 /* Protocols.swift in Sources */,
 				840FC0BA204B448C00C4EE30 /* AppDelegate.swift in Sources */,
+				7056C86920E295B500115691 /* Model.xcdatamodeld in Sources */,
+				7019519320E379090024F976 /* JSONParser.swift in Sources */,
 				846066D4204C9F4900E71EA4 /* MapsViewController.swift in Sources */,
 				840FC0D0204B515500C4EE30 /* RequestManager.swift in Sources */,
+				7019519520E38FBA0024F976 /* Restaurant.swift in Sources */,
 				840FC0D2204B525A00C4EE30 /* Place.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,7 +431,7 @@
 				DEVELOPMENT_TEAM = LDWUKS5K42;
 				INFOPLIST_FILE = VolpisTestProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = TestProject.VolpisTestProject;
+				PRODUCT_BUNDLE_IDENTIFIER = TestProject1.VolpisTestProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -430,7 +447,7 @@
 				DEVELOPMENT_TEAM = LDWUKS5K42;
 				INFOPLIST_FILE = VolpisTestProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = TestProject.VolpisTestProject;
+				PRODUCT_BUNDLE_IDENTIFIER = TestProject1.VolpisTestProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -459,6 +476,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7056C86720E295B500115691 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7056C86820E295B500115691 /* Model.xcdatamodel */,
+			);
+			currentVersion = 7056C86820E295B500115691 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 840FC0AE204B448C00C4EE30 /* Project object */;
 }
